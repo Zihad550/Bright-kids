@@ -1,0 +1,10 @@
+.secondary-title span {
+  color: #f37332;
+  font-weight: bold;
+}
+
+.about-image {
+  width: 50%;
+  height: 50%;
+  border-radius: 5px;
+}
