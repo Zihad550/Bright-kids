@@ -1,0 +1,16 @@
+.social-container div {
+  border: 1px solid #6246ea;
+  border-radius: 100%;
+  width: 5rem;
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s;
+}
+
+.social-container div:hover {
+  color: white;
+  background: #e45858;
+  cursor: pointer;
+}

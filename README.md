@@ -2,7 +2,7 @@
 
 This Project is make using React, Bootstrap, React-router and html css. [Visit Website](https://compassionate-goldberg-34bac9.netlify.app/).
 
-## This website can be used for:
+## This website can be used as:
 
 1. As a educational platform.
 2. As a course selling platform.

@@ -2,17 +2,26 @@
   height: 50rem;
 }
 
+.carousel-item img {
+  filter: grayscale(70%);
+}
+
 .primary-btn {
   background: #e49758;
   color: #1b1b1b;
   padding: 0.1rem 2rem;
   font-size: 1.7rem;
-  border: 1px solid #6246ea;
   border-radius: 0.5rem;
   transition: 0.5s;
+  border: none;
 }
 
 .primary-btn:hover {
   background: #d1d1e9;
   color: black;
+  outline: 1px solid blue;
+}
+
+.third-title {
+  font-weight: 300;
 }

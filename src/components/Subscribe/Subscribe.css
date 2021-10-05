@@ -1,0 +1,10 @@
+.subscribe-container {
+  background: #e45858;
+  border-radius: 15px;
+}
+
+.secondary-btn {
+  background: darkblue;
+  color: white;
+  border: none;
+}

@@ -1,8 +1,8 @@
-import React from 'react';
-import { Card, Col } from 'react-bootstrap';
+import React from "react";
+import { Card, Col } from "react-bootstrap";
 
-const ShowTeacher = props => {
-  const {name, position, about, img} = props.teacher;
+const ShowTeacher = (props) => {
+  const { name, position, about, img } = props.teacher;
   return (
     <Col>
       <Card>
@@ -10,9 +10,7 @@ const ShowTeacher = props => {
         <Card.Body>
           <Card.Title>{name}</Card.Title>
           <Card.Title>{position}</Card.Title>
-          <Card.Text>
-            {about}
-          </Card.Text>
+          <Card.Text>{about}</Card.Text>
         </Card.Body>
       </Card>
     </Col>

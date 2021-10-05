@@ -3,6 +3,19 @@
   font-weight: bold;
 }
 
+.secondary-title {
+  position: relative;
+}
+
+.secondary-title::before {
+  width: 22rem;
+  content: "";
+  height: 0.2rem;
+  background: #f37332;
+  bottom: -4px;
+  position: absolute;
+}
+
 .about-image {
   width: 50%;
   height: 50%;
