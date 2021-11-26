@@ -3,7 +3,7 @@ import "./JoinUs.css";
 
 const JoinUs = () => {
   return (
-    <div className="join-us-section py-5 text-white d-flex justify-content-evenly align-items-center my-5 ">
+    <div className="join-us-section py-5 text-white d-flex justify-content-evenly align-items-center my-5 flex-column flex-md-row">
       <div>
         <h2>
           Join us <br /> and stay tuned

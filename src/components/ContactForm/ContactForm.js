@@ -10,7 +10,7 @@ import { Container, Form } from "react-bootstrap";
 
 const ContactForm = () => {
   return (
-    <Container className="d-flex justify-content-between my-5">
+    <Container className="d-flex flex-column flex-md-row align-items-center justify-content-between my-5">
       {/* contact us */}
       <div>
         <h3>Contact Us</h3>

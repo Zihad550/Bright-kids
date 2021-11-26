@@ -17,7 +17,7 @@ const Home = () => {
       <Carousel className="carousel">
         <Carousel.Item className="carousel-item">
           <img className="d-block w-100 " src={banner1} alt="First slide" />
-          <Carousel.Caption className="d-flex justify-content-center align-items-center flex-column h-100">
+          <Carousel.Caption className="d-flex justify-content-center align-items-center flex-column ">
             <h2 className="third-title">BRIGHT KIDS</h2>
             <h3>WE'RE MAKING EVERY CHILD'S WORLD BETTER</h3>
             <button className="primary-btn rounded-pill">Contact</button>
@@ -27,7 +27,7 @@ const Home = () => {
         <Carousel.Item className="carousel-item">
           <img className="d-block w-100" src={banner2} alt="Second slide" />
 
-          <Carousel.Caption className="d-flex justify-content-center align-items-center flex-column h-100">
+          <Carousel.Caption className="d-flex justify-content-center align-items-center flex-column ">
             <h2 className="third-title">BRIGHT KIDS</h2>
             <h3>BEST GIFT FOR A CHILD IS A GREAT EDUCATION</h3>
             <button className="primary-btn rounded-pill">Enroll Now</button>
@@ -36,7 +36,7 @@ const Home = () => {
         <Carousel.Item className="carousel-item">
           <img className="d-block w-100" src={banner3} alt="Third slide" />
 
-          <Carousel.Caption className="d-flex justify-content-center align-items-center flex-column h-100">
+          <Carousel.Caption className="d-flex justify-content-center align-items-center flex-column ">
             <h2 className="third-title">BRIGHT KIDS</h2>
             <h3>GIVING STUDENTS A WIDE VARIETY</h3>
             <button className="primary-btn rounded-pill">About</button>
