@@ -5,7 +5,7 @@ import ShowClasses from "../ShowClasses/ShowClasses";
 const Classes = () => {
   const [classes, setClasses] = useState([]);
   useEffect(() => {
-    fetch("./classes.json")
+    fetch("http://localhost:8000/classes")
       .then((res) => res.json())
       .then((data) => setClasses(data));
   }, []);
@@ -15,7 +15,11 @@ const Classes = () => {
       <Container className="mb-5">
         <Row xs={1} md={2} className="g-4 ">
           {classes.map((course) => (
-            <ShowClasses key={course.id} class={course}></ShowClasses>
+            <ShowClasses
+              from={false}
+              key={course.id}
+              class={course}
+            ></ShowClasses>
           ))}
         </Row>
       </Container>

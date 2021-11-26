@@ -1,13 +1,13 @@
 import React, { useEffect, useState } from "react";
 import { Container, Row } from "react-bootstrap";
-import "./About.css";
 import class1 from "../../images/class-1.jpg";
 import ShowTeacher from "../ShowTeacher/ShowTeacher";
+import "./About.css";
 
 const About = () => {
   const [teachers, setTeachers] = useState([]);
   useEffect(() => {
-    fetch("./teachers.json")
+    fetch("http://localhost:8000/teachers")
       .then((res) => res.json())
       .then((data) => setTeachers(data));
   }, []);

@@ -1,9 +1,8 @@
 import React from "react";
 import { Container } from "react-bootstrap";
-import JoinUs from "../JoinUs/JoinUs";
-import Social from "../Social/Social";
-import Subscribe from "../Subscribe/Subscribe";
 import ContactForm from "../ContactForm/ContactForm";
+import JoinUs from "../JoinUs/JoinUs";
+import Subscribe from "../Subscribe/Subscribe";
 
 const Contact = () => {
   return (
@@ -14,11 +13,6 @@ const Contact = () => {
       {/* join us section start */}
       <Container className="my-5">
         <JoinUs></JoinUs>
-      </Container>
-
-      {/* Social section */}
-      <Container className="my-5">
-        <Social></Social>
       </Container>
 
       {/* subscribe section */}

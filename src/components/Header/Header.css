@@ -1,7 +1,15 @@
 .nav-bar {
   background: #6246ea;
 }
-
+.nav-brand img {
+  width: 60% !important;
+}
 .nav-link {
   font-size: 1.8rem;
+  color: blue !important;
+}
+
+.nav-link:hover {
+  background: #1d1c1c;
+  color: white !important;
 }

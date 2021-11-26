@@ -1,17 +1,17 @@
-import React from "react";
-import "./Social.css";
 import {
   faFacebookF,
-  faTwitter,
-  faLinkedinIn,
   faInstagram,
+  faLinkedinIn,
   faSkype,
+  faTwitter,
 } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import React from "react";
+import "./Social.css";
 
 const Social = () => {
   return (
-    <div className="social-container d-flex align-items-center justify-content-evenly my-5 fs-3 ">
+    <div className="social-container d-flex align-items-center justify-content-evenly  fs-5 ">
       <div>
         <FontAwesomeIcon icon={faFacebookF} />
       </div>
