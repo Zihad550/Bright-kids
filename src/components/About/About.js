@@ -7,7 +7,7 @@ import "./About.css";
 const About = () => {
   const [teachers, setTeachers] = useState([]);
   useEffect(() => {
-    fetch("http://localhost:8000/teachers")
+    fetch("https://mysterious-beach-17507.herokuapp.com/teachers")
       .then((res) => res.json())
       .then((data) => setTeachers(data));
   }, []);

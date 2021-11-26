@@ -8,7 +8,7 @@ import "./Home.css";
 const Home = () => {
   const [classes, setClasses] = useState([]);
   useEffect(() => {
-    fetch("http://localhost:8000/homeClasses")
+    fetch("https://mysterious-beach-17507.herokuapp.com/homeClasses")
       .then((res) => res.json())
       .then((data) => setClasses(data));
   }, []);
