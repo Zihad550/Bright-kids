@@ -8,7 +8,7 @@ import "./Home.css";
 const Home = () => {
   const [classes, setClasses] = useState([]);
   useEffect(() => {
-    fetch("http://localhost:8000/classes")
+    fetch("http://localhost:8000/homeClasses")
       .then((res) => res.json())
       .then((data) => setClasses(data));
   }, []);
@@ -46,7 +46,7 @@ const Home = () => {
 
       <h3 className="fs-1 fw-bold primary-title mt-5">Classes</h3>
       <Container className="mb-5">
-        <Row xs={1} md={4} className="g-4">
+        <Row xs={1} md={3} className="g-4">
           {classes.map((course) => (
             <ShowClasses
               key={course.id}
