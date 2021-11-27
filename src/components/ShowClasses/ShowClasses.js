@@ -2,13 +2,19 @@ import { faCalendarAlt, faClock } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import { Card, Col } from "react-bootstrap";
+import { useHistory } from "react-router-dom/cjs/react-router-dom.min";
 import "./ShowClass.css";
 
 const ShowClasses = (props) => {
-  const { className, cost, educator, img, time, duration } = props.class;
+  const { className, cost, educator, img, time, duration, _id } = props.class;
+
+  const history = useHistory();
   const commonCardStyle = `${
     props.from && "w-100 fs-6"
   } d-flex align-items-center w-75 justify-content-between mx-auto mb-2 fs-5`;
+  const handleClick = (id) => {
+    history.push(`/enroll/${id}`);
+  };
   return (
     <Col>
       <Card className="h-100">
@@ -50,7 +56,12 @@ const ShowClasses = (props) => {
             </Card.Text>
           </div>
 
-          <button className="primary-btn fs-5 ">Enroll Class</button>
+          <button
+            onClick={() => handleClick(_id)}
+            className="primary-btn fs-5 "
+          >
+            Enroll Class
+          </button>
         </Card.Body>
       </Card>
     </Col>
