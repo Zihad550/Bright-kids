@@ -2,18 +2,34 @@ import { faCalendarAlt, faClock } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import { Card, Col } from "react-bootstrap";
+import "./ShowClass.css";
 
 const ShowClasses = (props) => {
   const { className, cost, educator, img, time, duration } = props.class;
   const commonCardStyle = `${
     props.from && "w-100 fs-6"
   } d-flex align-items-center w-75 justify-content-between mx-auto mb-2 fs-5`;
-  console.log(props.from);
   return (
     <Col>
-      <Card>
-        <Card.Img variant="top" src={img} />
-        <Card.Body>
+      <Card className="h-100">
+        {props.from ? (
+          <Card.Img
+            className="classImage"
+            style={{ height: "275px" }}
+            // style={props.from ? { height: "275px" } : { height: "222px" }}
+            variant="top"
+            src={img}
+          />
+        ) : (
+          <Card.Img
+            className="classImage"
+            style={{ height: "422px" }}
+            // style={props.from ? { height: "275px" } : { height: "222px" }}
+            variant="top"
+            src={img}
+          />
+        )}
+        <Card.Body className="d-flex flex-column justify-content-end">
           <Card.Title className={`${props.from && "fs-4"} fs-3`}>
             {className}
           </Card.Title>

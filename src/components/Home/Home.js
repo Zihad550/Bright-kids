@@ -46,7 +46,7 @@ const Home = () => {
 
       <h3 className="fs-1 fw-bold primary-title mt-5">Classes</h3>
       <Container className="mb-5">
-        <Row xs={1} md={3} className="g-4">
+        <Row xs={1} md={2} lg={3} className="g-4">
           {classes.map((course) => (
             <ShowClasses
               key={course.id}

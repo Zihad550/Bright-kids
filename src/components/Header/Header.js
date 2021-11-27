@@ -18,7 +18,7 @@ const Header = () => {
               Home
             </NavLink>
             <NavLink className="nav-link py-3" to="/classes">
-              Classes
+              All Classes
             </NavLink>
             <NavLink className="nav-link py-3" to="/about">
               About

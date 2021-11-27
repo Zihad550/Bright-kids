@@ -11,7 +11,7 @@ const Classes = () => {
   }, []);
   return (
     <>
-      <h2 className="primary-title">Classes</h2>
+      <h2 className="primary-title">All Classes</h2>
       <Container className="mb-5">
         <Row xs={1} md={2} className="g-4 ">
           {classes.map((course) => (
