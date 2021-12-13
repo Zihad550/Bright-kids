@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Carousel, Container, Row } from "react-bootstrap";
-import banner1 from "../../images/banner-1.jpg";
+import banner1 from "../../images/banner-111.jpg";
 import banner2 from "../../images/banner-2.jpg";
 import banner3 from "../../images/banner-3.jpg";
 import ShowClasses from "../ShowClasses/ShowClasses";

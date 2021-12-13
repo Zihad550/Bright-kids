@@ -1,6 +1,6 @@
 # Live Website at
 
-This Project is make using React, Bootstrap, React-router and html css. [Visit Website](https://compassionate-goldberg-34bac9.netlify.app/).
+This Project is make using React, Bootstrap, React-router and html css. [Visit Website](https://bright-kids.netlify.app/home).
 
 ## This website can be used as:
 
