@@ -1,12 +1,10 @@
 import {
-  faClock,
-  faLocationArrow,
-  faPhone,
+faClock,
+faLocationArrow,
+faPhone
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import Button from "@restart/ui/esm/Button";
-import React from "react";
-import { Container, Form } from "react-bootstrap";
+import { Button, Container, Form } from "react-bootstrap";
 
 const ContactForm = () => {
   return (

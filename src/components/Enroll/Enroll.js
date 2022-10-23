@@ -1,10 +1,10 @@
 import {
-  faCalendarAlt,
-  faCartPlus,
-  faClock,
+faCalendarAlt,
+faCartPlus,
+faClock
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { Button, Card, Col, Container, Form, Row } from "react-bootstrap";
 import { useParams } from "react-router-dom";
 
@@ -14,7 +14,7 @@ const Enroll = () => {
   const { className, cost, educator, img, time, duration } = course;
 
   useEffect(() => {
-    fetch(`https://mysterious-beach-17507.herokuapp.com/classes/${id}`)
+    fetch(`${process.env.REACT_APP_API_BASE_URL}/classes/${id}`)
       .then((res) => res.json())
       .then((data) => setCourse(data));
   }, [id]);

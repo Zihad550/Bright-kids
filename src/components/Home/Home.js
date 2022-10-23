@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { Carousel, Container, Row } from "react-bootstrap";
 import banner1 from "../../images/banner-111.jpg";
 import banner2 from "../../images/banner-2.jpg";
@@ -8,7 +8,7 @@ import "./Home.css";
 const Home = () => {
   const [classes, setClasses] = useState([]);
   useEffect(() => {
-    fetch("https://mysterious-beach-17507.herokuapp.com/homeClasses")
+    fetch(`${process.env.REACT_APP_API_BASE_URL}/homeClasses`)
       .then((res) => res.json())
       .then((data) => setClasses(data));
   }, []);

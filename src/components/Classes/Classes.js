@@ -1,11 +1,11 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { Container, Row } from "react-bootstrap";
 import ShowClasses from "../ShowClasses/ShowClasses";
 
 const Classes = () => {
   const [classes, setClasses] = useState([]);
   useEffect(() => {
-    fetch("https://mysterious-beach-17507.herokuapp.com/classes")
+    fetch(`${process.env.REACT_APP_API_BASE_URL}/classes`)
       .then((res) => res.json())
       .then((data) => setClasses(data));
   }, []);
